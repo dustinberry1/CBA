@@ -11,10 +11,10 @@ st.title("4Runner vs Tesla Cost-Benefit Analysis")
 
 # Inputs for 4Runner
 st.header("4Runner")
-gas_price_per_gallon = st.number_input("Gas price per gallon ($)", value=3.50)
+gas_price_per_gallon = st.number_input("Gas price per gallon ($)", value=3.00)
 mpg_4runner = st.number_input("4Runner MPG", value=18)
-miles_per_year = st.number_input("Miles driven per year", value=12000)
-maintenance_4runner = st.number_input("Annual maintenance cost for 4Runner ($)", value=1000)
+miles_per_year = st.number_input("Miles driven per year", value=20000)
+maintenance_4runner = st.number_input("Annual maintenance cost for 4Runner ($)", value=400)
 #insurance_4runner = st.number_input("Annual insurance cost for 4Runner ($)", value=1200)
 #depreciation_4runner = st.number_input("5-year depreciation for 4Runner ($)", value=3000)
 
@@ -25,9 +25,9 @@ miles_per_kwh = st.number_input("Tesla efficiency (miles per kWh)", value=4)
 #maintenance_tesla = st.number_input("Annual maintenance cost for Tesla ($)", value=500)
 #insurance_tesla = st.number_input("Annual insurance cost for Tesla ($)", value=1500)
 #depreciation_tesla = st.number_input("5-year depreciation for Tesla ($)", value=1500)
-purchase_cost_tesla = st.number_input("Purchase cost for Tesla ($)", value=45000)
-trade_in_value_4runner = st.number_input("Trade-in value for 4Runner ($)", value=15000)
-tax_incentives = st.number_input("Tax incentives for Tesla ($)", value=7500)
+purchase_cost_tesla = st.number_input("Purchase cost for Tesla ($)", value=27000)
+trade_in_value_4runner = st.number_input("Trade-in value for 4Runner ($)", value=33000)
+tax_incentives = st.number_input("Tax incentives for Tesla ($)", value=0)
 
 # Calculate 4Runner Costs
 fuel_cost_4runner = (miles_per_year / mpg_4runner) * gas_price_per_gallon
