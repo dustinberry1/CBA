@@ -8,6 +8,7 @@ import streamlit as st
 # %%
 # Create input fields for the user to input values
 st.title("4Runner vs Tesla Cost-Benefit Analysis")
+st.text("This app compares the 5-year cost of owning a 4Runner vs a Tesla.")
 
 st.header("General Information")
 miles_per_year = st.number_input("Miles driven per year", value=20000)
