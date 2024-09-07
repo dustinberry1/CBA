@@ -19,6 +19,7 @@ mpg_4runner = st.number_input("4Runner MPG", value=18)
 maintenance_4runner = st.number_input("Annual maintenance cost for 4Runner ($)", value=400)
 insurance_4runner = st.number_input("Annual insurance cost for 4Runner ($)", value=618)
 trade_in_value_4runner = st.number_input("Trade-in value for 4Runner ($)", value=31000)
+amount_owed_4runner = st.number_input("Amount owed on 4Runner ($)", value=0)
 #depreciation_4runner = st.number_input("5-year depreciation for 4Runner ($)", value=3000)
 
 # Inputs for Tesla
@@ -37,7 +38,7 @@ total_4runner_costs = (fuel_cost_4runner + maintenance_4runner + insurance_4runn
 
 # Calculate Tesla Costs
 electricity_cost_tesla = (miles_per_year / miles_per_kwh) * electricity_cost_per_kwh
-total_tesla_costs = (electricity_cost_tesla + insurance_tesla) * 5 + (purchase_cost_tesla - trade_in_value_4runner - tax_incentives)
+total_tesla_costs = (electricity_cost_tesla + insurance_tesla) * 5 + (purchase_cost_tesla - trade_in_value_4runner + amount_owed_4runner - tax_incentives)
 
 # Display results
 st.subheader("Results")
