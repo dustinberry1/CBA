@@ -53,7 +53,7 @@ if cost_difference > 0:
     st.success(f"This is a savings of ${monthly_difference:,.2f} per month.")
 else:
     st.error(f"Switching to the Tesla will cost you an additional ${abs(cost_difference):,.2f} over 5 years.")
-    st.error(f"This is a savings of ${monthly_difference:,.2f} per month.")
+    st.error(f"This will cost an extra ${abs(monthly_difference):,.2f} per month.")
 
 
 
