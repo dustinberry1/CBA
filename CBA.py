@@ -9,7 +9,7 @@ import streamlit as st
 # Create input fields for the user to input values
 st.title("Cost-Benefit Analysis")
 st.markdown("""<style>.big-font {font-size:30px;}</style><div class='big-font'>Trading a 4Runner for a Tesla Model 3</div>""", unsafe_allow_html=True)
-print(\n)
+st.text()
 
 st.header("General Information")
 miles_per_year = st.number_input("Miles driven per year", value=20000)
