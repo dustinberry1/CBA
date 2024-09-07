@@ -7,9 +7,8 @@ import streamlit as st
 
 # %%
 # Create input fields for the user to input values
-st.title("4Runner vs Tesla Cost-Benefit Analysis")
-st.markdown("This app compares the 5-year cost of owning a 4Runner vs a Tesla.")
-st.markdown("""<style>.big-font {font-size:30px;}</style><div class='big-font'>Your Text Here</div>""", unsafe_allow_html=True)
+st.title("Cost-Benefit Analysis")
+st.markdown("""<style>.big-font {font-size:30px;}</style><div class='big-font'>Trading a 4Runner for a Tesla Model 3</div>""", unsafe_allow_html=True)
 
 
 st.header("General Information")
