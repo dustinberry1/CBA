@@ -9,13 +9,16 @@ import streamlit as st
 # Create input fields for the user to input values
 st.title("4Runner vs Tesla Cost-Benefit Analysis")
 
+st.header("General Information")
+miles_per_year = st.number_input("Miles driven per year", value=20000)
+
 # Inputs for 4Runner
 st.header("4Runner")
 gas_price_per_gallon = st.number_input("Gas price per gallon ($)", value=3.00)
 mpg_4runner = st.number_input("4Runner MPG", value=18)
-miles_per_year = st.number_input("Miles driven per year", value=20000)
 maintenance_4runner = st.number_input("Annual maintenance cost for 4Runner ($)", value=400)
 insurance_4runner = st.number_input("Annual insurance cost for 4Runner ($)", value=618)
+trade_in_value_4runner = st.number_input("Trade-in value for 4Runner ($)", value=31000)
 #depreciation_4runner = st.number_input("5-year depreciation for 4Runner ($)", value=3000)
 
 # Inputs for Tesla
@@ -26,7 +29,6 @@ miles_per_kwh = st.number_input("Tesla efficiency (miles per kWh)", value=4)
 insurance_tesla = st.number_input("Annual insurance cost for Tesla ($)", value=2260)
 #depreciation_tesla = st.number_input("5-year depreciation for Tesla ($)", value=1500)
 purchase_cost_tesla = st.number_input("Purchase cost for Tesla ($)", value=27000)
-trade_in_value_4runner = st.number_input("Trade-in value for 4Runner ($)", value=31000)
 tax_incentives = st.number_input("Tax incentives for Tesla ($)", value=0)
 
 # Calculate 4Runner Costs
