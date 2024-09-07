@@ -47,10 +47,14 @@ st.write(f"5-year total cost of owning the Tesla: ${total_tesla_costs:,.2f}")
 
 # Compare Costs
 cost_difference = total_4runner_costs - total_tesla_costs
+monthly_difference = cost_difference / 60
 if cost_difference > 0:
     st.success(f"Switching to the Tesla will save you ${cost_difference:,.2f} over 5 years.")
+    st.success(f"This is a savings of ${monthly_difference:,.2f} per month.")
 else:
     st.error(f"Switching to the Tesla will cost you an additional ${abs(cost_difference):,.2f} over 5 years.")
+    st.error(f"This is a savings of ${monthly_difference:,.2f} per month.")
+
 
 
 
