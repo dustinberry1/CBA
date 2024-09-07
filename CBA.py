@@ -11,12 +11,10 @@ st.title("Cost-Benefit Analysis")
 st.markdown("""<style>.big-font {font-size:30px;}</style><div class='big-font'>Trading a 4Runner for a Tesla Model 3</div>""", unsafe_allow_html=True)
 st.text("")
 
-st.header("General Information")
-miles_per_year = st.number_input("Miles driven per year", value=20000)
-
 # Inputs for 4Runner
 st.header("4Runner")
 gas_price_per_gallon = st.number_input("Gas price per gallon ($)", value=3.00)
+miles_per_year = st.number_input("Miles driven per year", value=20000)
 mpg_4runner = st.number_input("4Runner MPG", value=18)
 maintenance_4runner = st.number_input("Annual maintenance cost for 4Runner ($)", value=400)
 insurance_4runner = st.number_input("Annual insurance cost for 4Runner ($)", value=618)
